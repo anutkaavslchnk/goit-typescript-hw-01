@@ -5,20 +5,20 @@ type Page={
     accounts:string[];
     status:string;
     details?:{
-        createAt:string;
-        updateAt:string;
+        createAt:Date;
+        updateAt:Date;
     }
 }
-let page1:Page = {
-    title: 'The awesome page',
-    likes: 100,
-    accounts: ['Max', 'Anton', 'Nikita'],
-    status: 'open',
-    details: {
-      createAt: new Date('2021-01-01').toISOString(),
-      updateAt: new Date('2021-05-01').toISOString(),
-    }
+let page1: Page = {
+  title: 'The awesome page',
+  likes: 100,
+  accounts: ['Max', 'Anton', 'Nikita'],
+  status: 'open',
+  details: {
+      createAt: new Date('2021-01-01'),
+      updateAt: new Date('2021-05-01'),
   }
+};
   
   let page2:Page = {
     title: 'Python or Js',
